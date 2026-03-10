@@ -5,6 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>処方鑑別チェック | 薬剤師向け無料ツール</title>
   <meta name="description" content="処方の併用禁忌・重複投与・年齢注意を一括チェック。薬剤師の処方鑑別業務を効率化する無料ツール。">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "処方鑑別チェック",
+    "description": "処方の併用禁忌・重複投与・年齢注意を一括チェック。薬剤師の処方鑑別業務を効率化する無料ツール。",
+    "url": "https://yusuketakuma.github.io/pharma-prescription-screening/",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "JPY"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "薬剤師"
+    },
+    "inLanguage": "ja"
+  }
+  </script>
   <meta property="og:title" content="処方鑑別チェック - 薬剤師向け無料ツール">
   <meta property="og:description" content="処方の併用禁忌・重複投与・年齢注意を一括チェック。薬剤師の処方鑑別業務を効率化する無料ツール。">
   <meta property="og:type" content="website">
@@ -270,6 +291,47 @@
       .form-grid { grid-template-columns: 1fr 1fr; }
     }
   </style>
+  <!-- Google tag (gtag.js) - 測定IDを差し替えてください -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+
+    function trackPromptCTA() {
+      gtag('event', 'cta_click', {
+        'event_category': 'monetization',
+        'event_label': 'ai_prompts',
+        'product_name': 'AIプロンプト集',
+        'price': 300
+      });
+    }
+
+    function trackNotionCTA() {
+      gtag('event', 'cta_click', {
+        'event_category': 'monetization',
+        'event_label': 'notion_template',
+        'product_name': 'Notionテンプレート',
+        'price': 500
+      });
+    }
+
+    function trackToolUsage(actionType) {
+      gtag('event', 'tool_usage', {
+        'event_category': 'engagement',
+        'event_label': '処方鑑別チェック',
+        'action_type': actionType
+      });
+    }
+
+    function trackCopyAction() {
+      gtag('event', 'copy_action', {
+        'event_category': 'engagement',
+        'event_label': 'prescription_screening'
+      });
+    }
+  </script>
 </head>
 <body>
   <div class="container">
@@ -369,6 +431,7 @@
     </div>
     
     <div class="other-tools">
+      <a href="https://yusuketakuma.github.io/pharma-free-tools/" target="_blank" style="display: inline-block; margin-bottom: 16px; padding: 8px 16px; background: #3b82f6; color: white; text-decoration: none; border-radius: 8px; font-size: 0.85rem; font-weight: 600;">🏠 全ツール一覧（ポータル）</a><br><br>
       <div class="other-tools-title">🔧 その他の無料ツール</div>
       <div class="tool-links">
         <a href="https://yusuketakuma.github.io/pharma-drug-price-tool/" class="tool-link">💊 薬価シミュレーター</a>
@@ -382,6 +445,7 @@
         <a href="https://yusuketakuma.github.io/pharma-side-effect-checker/" class="tool-link">⚠️ 副作用リスク評価</a>
         <a href="https://yusuketakuma.github.io/pharma-medication-calendar/" class="tool-link">🗓️ 服薬カレンダー</a>
         <a href="https://yusuketakuma.github.io/pharma-di-query/" class="tool-link">📞 DI照会生成</a>
+        <a href="https://yusuketakuma.github.io/pharma-medication-reminder/" style="display: block; padding: 10px 12px; background: white; border-radius: 8px; text-decoration: none; color: #1f2937; font-size: 0.85rem;">🔔 服薬リマインダー生成</a>
         <a href="https://yusuketakuma.github.io/pharma-bringing-medicine/" class="tool-link">💊 持参薬チェック</a>
         <a href="https://yusuketakuma.github.io/pharma-inventory-alert/" class="tool-link">📦 在庫アラート通知</a>
         <a href="https://yusuketakuma.github.io/pharma-adherence-check/" style="display:block;text-decoration:none;border-radius:10px;border:1px solid rgba(234,88,12,0.25);padding:12px 14px;background:#fff;color:#ea580c;font-weight:700;">💊 服薬アドヒアランス評価</a>
@@ -768,6 +832,22 @@
     // 初期化
     initDrugSelects();
   </script>
+  <!-- 収益化CTA -->
+  <section style="margin-top: 32px; padding: 24px; background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-radius: 16px; border: 1px solid #bfdbfe;">
+    <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 12px; color: #1e40af;">🎁 さらに業務を効率化しませんか？</h3>
+    <div style="margin-bottom: 16px;">
+      <p style="margin-bottom: 8px; font-size: 0.9rem;"><strong>📖 薬剤師向けAIプロンプト集</strong></p>
+      <p style="font-size: 0.85rem; color: #555; margin-bottom: 8px;">ChatGPT/Claudeで時短する100+のプロンプトテンプレート</p>
+      <p style="font-size: 1rem; font-weight: 600; color: #1e40af;">¥300</p>
+    </div>
+    <div style="margin-bottom: 16px;">
+      <p style="margin-bottom: 8px; font-size: 0.9rem;"><strong>📋 薬局業務Notionテンプレート</strong></p>
+      <p style="font-size: 0.85rem; color: #555; margin-bottom: 8px;">訪問記録・在庫管理・患者管理を一元化</p>
+      <p style="font-size: 1rem; font-weight: 600; color: #1e40af;">¥500</p>
+    </div>
+    <p style="font-size: 0.8rem; color: #666;">※ 準備中（近日公開）</p>
+  </section>
+
   <div class="section">
     <div class="section-title">🔗 他の無料ツール</div>
     <div class="links">
